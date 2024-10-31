@@ -1,0 +1,309 @@
+{
+    "key": "group_655acda8f40d3",
+    "title": "Sample Content for ACF",
+    "fields": [
+        {
+            "key": "field_6563f8cbcde60",
+            "label": "Sample Images",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_655acda9d2ce8",
+            "label": "Sample Image Prompt",
+            "name": "acfsc_sample_image_type",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "You can make this a broad search like \"Nature\", \"Tigers\", \"People\". Or it could be something specific like \"Group of people working\".",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_656290c6ae847",
+                        "operator": ">",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "nature",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_655d76483d17c",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_656290c6ae847",
+                        "operator": ">",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>This will import a collection of stock images from <a href=\"https:\/\/www.pexels.com\/\" target=\"_blank\">Pexels<\/a> to the inventory matching the search prompt above. We recommend using the \"Check for matches\" tool above to ensure your search contains results.<\/p>\r\n<div class=\"acfsc-pexels-import\">\r\n    <button type=\"button\" class=\"button button-primary\" id=\"acfsc-pexels-import\">Import Images<\/button>\r\n    <div class=\"acfsc-pexels-import__loading\" id=\"acfsc-pexels-import-loading\">\r\n        <div class=\"lds-ring acfsc-pexels-import__spinner\"><div><\/div><div><\/div><div><\/div><div><\/div><\/div>\r\n        <span><\/span>\r\n    <\/div>\r\n<\/div>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_655d752be9c42",
+            "label": "Sample Image Inventory",
+            "name": "acfsc_image_inventory",
+            "aria-label": "",
+            "type": "gallery",
+            "instructions": "These are what will be used when auto-populating image fields.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_656290c6ae847",
+                        "operator": ">",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "insert": "append",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6563f8d6cde61",
+            "label": "Sample Videos",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6563f9205ff71",
+            "label": "Sample Video Prompt",
+            "name": "acfsc_sample_video_type",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "You can make this a broad search like \"Nature\", \"Tigers\", \"People\". Or it could be something specific like \"Group of people working\".",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_655acda9d2ce8",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "nature",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6563f8357362b",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_656290c6ae847",
+                        "operator": ">",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>This will import a collection of stock videos from <a href=\"https:\/\/www.pexels.com\/\" target=\"_blank\">Pexels<\/a> to the inventory matching the search prompt above. We recommend using the \"Check for matches\" tool above to ensure your search contains results.<\/p>\r\n<div class=\"acfsc-pexels-import\">\r\n    <button type=\"button\" class=\"button button-primary\" id=\"acfsc-pexels-video-import\">Import Videos<\/button>\r\n    <div class=\"acfsc-pexels-import__loading\" id=\"acfsc-pexels-video-import-loading\">\r\n        <div class=\"lds-ring acfsc-pexels-import__spinner\"><div><\/div><div><\/div><div><\/div><div><\/div><\/div>\r\n        <span><\/span>\r\n    <\/div>\r\n<\/div>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6563582990a57",
+            "label": "Sample Video Inventory",
+            "name": "acfsc_video_inventory",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "These are what will be used when auto-populating video fields. To ensure your video fields can be auto-populated, you can set the validation rules to be video file types (ie. mp4)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_656359295420d",
+            "button_label": "Add Video",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_656359295420d",
+                    "label": "Video",
+                    "name": "video",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "mp4,mov,wmv,avi,mkv,webm",
+                    "parent_repeater": "field_6563582990a57"
+                }
+            ]
+        },
+        {
+            "key": "field_6563f8e2cde62",
+            "label": "Sample Files",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_656359c8eec55",
+            "label": "Sample File Inventory",
+            "name": "acfsc_file_inventory",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "These are what will be used when auto-populating file fields.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_656359c8eec56",
+            "button_label": "Add File",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_656359c8eec56",
+                    "label": "File",
+                    "name": "file",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "docx,ppt,xls,pdf",
+                    "parent_repeater": "field_656359c8eec55"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-sample-content"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "private": 1
+}

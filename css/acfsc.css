@@ -1,0 +1,256 @@
+.acf-field .acf-label > label, .acfsc-populate {
+    display: inline-block;
+    vertical-align: middle;
+}
+.acf-field .acfsc-populate,
+.wp-editor-tabs .acfsc-populate,
+.acf-block-panel .acfsc-populate {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: #f3f5f6;
+    border-radius: 50%;
+    border: solid #f3f5f6 1px;
+}
+.acf-block-panel .acfsc-populate {
+  margin: 0 0 10px 16px;
+}
+.acf-field .acf-fc-layout-controls .acfsc-populate {
+  float: left;
+  visibility: hidden;
+}
+.acf-field .layout:hover .acfsc-populate {
+  visibility: visible;
+}
+.acf-field .acf-fc-layout-controls .lds-ring {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+}
+.acf-field .acf-fc-layout-controls .lds-ring div {
+  width: 14px;
+  height: 14px;
+  border-width: 3px;
+}
+
+.acf-field .acfsc-populate svg,
+.wp-editor-tabs .acfsc-populate svg {
+  margin-top: 2px;
+}
+.acf-field .acfsc-populate svg path,
+.wp-editor-tabs .acfsc-populate svg path {
+  fill: #23282d;
+}
+
+.acf-field .acfsc-populate:hover,
+.wp-editor-tabs .acfsc-populate:hover {
+  border: solid #0071a1 1px;
+}
+.acf-field .acfsc-populate:hover svg path,
+.wp-editor-tabs .acfsc-populate:hover svg path {
+  fill: #0071a1;
+}
+.acfsc-table-btn {
+  padding: 16px;
+}
+.acfsc-table-btn .acfsc-button-superpop {
+  margin-left: 0;
+}
+/* .acfsc-superpopping .select2-container, .acfsc-superpopping .mce-toolbar-grp, .acfsc-superpopping .ui-menu, .acfsc-superpopping .pac-container {
+  display: none !important;
+} */
+.acfsc-superpopping .select2-container {
+  display: none !important;
+}
+
+.wp-editor-tabs .acfsc-populate {
+  float: left;
+  margin-top: 4px;
+  width: 29px;
+  height: 29px;
+}
+.wp-editor-tabs .acfsc-populate svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+/* 
+.wp-editor-tabs .acfsc-populate {
+    float: left;
+    border: 0;
+    padding: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: #f3f5f6;
+    border-radius: 50%;
+    border: solid #f3f5f6 1px;
+}
+.wp-editor-tabs .acfsc-populate svg {
+  margin-top: 2px;
+} */
+
+.acfsc-check-availability {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+/* Slightly adjust sample button for table fields */
+td.acf-field > .acf-input > .acfsc-populate {
+  margin: 0 0 5px 0;
+}
+
+
+.acfsc-test {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.acfsc-test__spinner {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+}
+.acfsc-test__spinner .lds-ring  {
+  margin-left: 0;
+}
+
+.acfsc-test__text {
+    margin-left: 10px;
+}
+.acfsc-pexels-import {
+  display: flex;
+  align-items: center;
+}
+.acfsc-pexels-import__loading {
+  display: none;
+  align-items: center;
+  margin-left: 15px;
+}
+.acfsc-pexels-import__loading p {
+  margin: 0;
+}
+.acfsc-pexels-import__loading span {
+  margin-left: 8px;
+}
+
+/* Buttons */
+.acfsc-button-superpop {
+  background-color: #a11000;
+  border: 0;
+  font-size: 13px;
+  color: #FFF;
+  margin: 0 0 0 7px;
+  padding: 4px 10px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+}    
+.acfsc-button-superpop:hover {
+  background-color: #950f00;
+}
+.acfsc-button-superpop svg, .acfsc-button-superpop span, .acfsc-button-superpop + .lds-ring {
+  display: inline-block;
+  vertical-align: middle;
+}
+.acfsc-button-superpop span {
+  margin-left: 5px;
+}
+.acfsc-button-superpop svg {
+  width: 16px;
+  height: 16px;
+}
+.acfsc-button-superpop svg path {
+  fill: #FFFFFF;
+}
+.acfsc-button-superpop + .lds-ring {
+  margin-left: 10px;
+}
+.acfsc-superpop-status {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.acf-postbox .postbox-header .handle-actions .acfsc-populate {
+  display: none;
+  border: 0;
+  background: none;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+.acf-postbox .postbox-header:hover .handle-actions .acfsc-populate {
+  display: inline-block;
+}
+.acf-postbox .postbox-header .handle-actions .acfsc-populate svg path {
+  fill: #72777c;
+}
+.acf-postbox .postbox-header .handle-actions .acfsc-populate:hover svg path {
+  fill: #000;
+}
+.acf-postbox .postbox-header .handle-actions .lds-ring {
+  display: inline-block;
+  vertical-align: unset;
+  width: 14px;
+  height: 14px;
+  margin-left: 0;
+}
+.acf-postbox .postbox-header .handle-actions .lds-ring div {
+  width: 14px;
+  height: 14px;
+  border-width: 3px;
+}
+
+.acfsc-anim-checkmark * {padding:0;margin:0}.wrapper{height:100vh;display:flex;justify-content:center;align-items:center;background-color:#eee}
+.acfsc-anim-checkmark .checkmark__circle{stroke-dasharray: 166;stroke-dashoffset: 166;stroke-width: 2;stroke-miterlimit: 10;stroke: #7ac142;fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}
+.acfsc-anim-checkmark .checkmark{width: 20px;height: 20px;border-radius: 50%;display: block;stroke-width: 2;stroke: #fff;stroke-miterlimit: 10;margin: 0;box-shadow: inset 0px 0px 0px #7ac142;animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both}
+.acfsc-anim-checkmark .checkmark__check{transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}@keyframes stroke{100%{stroke-dashoffset: 0}}@keyframes scale{0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}}@keyframes fill{100%{box-shadow: inset 0px 0px 0px 30px #7ac142}}
+
+
+
+.lds-ring {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: 4px solid #000;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
